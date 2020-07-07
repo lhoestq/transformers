@@ -191,7 +191,7 @@ class DPRModelTest(ModelTesterMixin, unittest.TestCase):
     all_model_classes = (DPRContextEncoder, DPRQuestionEncoder, DPRReader,) if is_torch_available() else ()
 
     test_resize_embeddings = False
-    test_missing_keys = False  # why?
+    test_missing_keys = False
     test_pruning = False
     test_head_masking = False
 
